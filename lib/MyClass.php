@@ -8,15 +8,15 @@ class MyClass extends MyAbstractClass implements MyInterface {
 	private $message = array();
 	
 	public function __construct () {
-		$this->methodTwo("message", "WW91IGRpZCBpdCEKCg==");
+		$this->setVariable("message", "WW91IGRpZCBpdCEKCg==");
 	}
 	
 	protected function hello () {
-		return $this->myAbstractMethod();
+		return $this->callGetMessage();
 	}
 	
 	private function getMessage() {
-		$_message = $this->methodOne("message");
+		$_message = $this->getVariable("message");
 		return base64_decode($message);
 	}
 

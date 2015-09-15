@@ -2,7 +2,7 @@
 
 interface MyInterface {
 	
-	public function methodOne($var);
-	public function methodTwo($var, $val);
+	public function getVariable($var);
+	public function setVariable($var, $val);
 	
 }

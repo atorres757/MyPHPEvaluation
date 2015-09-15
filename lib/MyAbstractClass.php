@@ -2,6 +2,6 @@
 
 abstract class MyAbstractClass {
 	
-	abstract public function myAbstractMethod ();
+	abstract protected function callGetMessage ();
 	
 }
